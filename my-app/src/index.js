@@ -335,7 +335,7 @@ function Slide(props) {
         <Header as={'h2'} content={props.slideHeader}
                 style={props.headerStyle}/>
         <p style={props.textStyle}>{props.slideText}</p>
-        <Button style={props.buttonStyle} className={'animated'}>
+        <Button style={props.buttonStyle} className={'hoverable'}>
           {props.slideButtonTxt}
           <Icon name={'angle right'} className={'animatedIcon'}/>
         </Button>
