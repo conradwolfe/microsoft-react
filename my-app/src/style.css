@@ -1,0 +1,139 @@
+body {
+  font-family: sans-serif !important;
+  max-width: 1600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.carousel {
+  position: relative;
+  padding: 0 14px;
+}
+
+i.facebook.icon, i.twitter.icon, i.linkedin.icon{
+  margin: 0 !important;
+}
+
+.ui.facebook.button, .ui.twitter.button, .ui.linkedin.button{
+  padding: 0;
+  height: 28px;
+  width: 28px;
+  border-radius: 0;
+  margin-right: 12px;
+}
+
+.ui.facebook.button {
+  margin-left: 8px;
+}
+
+.animated {}
+
+.animatedIcon {}
+
+.animatedText{}
+
+.animated:hover .animatedIcon {
+
+}
+
+.animated:hover .animatedText {
+
+}
+
+#top-menu {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  padding: 0 75px;
+  height: 54px;
+}
+
+#microsoft-logo {
+  width: 108px;
+}
+
+#page-body {
+  padding: 0 75px;
+}
+
+#row-one {
+padding-top: 0;
+}
+
+#row-two {
+  padding-top: 48px;
+}
+
+#row-three {
+  padding: 48px 0 0 0;
+}
+
+#row-four {
+  padding-top: 48px;
+  padding-bottom: 5px;
+}
+
+#row-five {
+  padding-bottom: 0;
+}
+
+#row-six {
+  padding-top: 48px;
+  padding-bottom: 0;
+}
+
+#row-seven {
+  font-size: 16px;
+  padding-top: 0;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+#carousel-button-right {
+  right: 2%;
+}
+
+#carousel-button-left {
+  left: 2%;
+}
+
+#carousel-button-left, #carousel-button-right {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  opacity: 0;
+  color: white;
+  background-color: rgb(64, 64, 64);
+  transition: opacity 0.3s;
+}
+
+#carousel:hover #carousel-button-left, #carousel:hover #carousel-button-right {
+  opacity: 0.8;
+}
+
+body > div.ui.bottom.right.basic.flowing.popup.transition.visible {
+  background-color: rgb(242, 242, 242);
+  border-radius: 0;
+  max-width: 1250px;
+}
+
+#popup-grid {
+  font-size: 12px;
+}
+
+#footer {
+  background-color: rgb(242, 242, 242);
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 12px;
+}
+
+#bottom-menu {
+  background-color: rgb(242, 242, 242);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  padding: 0 75px;
+  font-size: 10px;
+  height: 54px;
+}
