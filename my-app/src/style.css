@@ -3,6 +3,15 @@ body {
   max-width: 1600px;
   margin-left: auto !important;
   margin-right: auto !important;
+  line-height: 2.4285em !important
+}
+
+i.facebook.icon, i.twitter.icon, i.linkedin.icon{
+  margin: 0 !important;
+}
+
+i.search.icon, i.shopping.cart.icon, i.user.outline.icon {
+  margin-left: 0.357143em !important;
 }
 
 .carousel {
@@ -10,8 +19,14 @@ body {
   padding: 0 14px;
 }
 
-i.facebook.icon, i.twitter.icon, i.linkedin.icon{
-  margin: 0 !important;
+.hoverable:hover .animatedIcon {
+  padding-left: 5px;
+}
+
+.popup {
+  line-height: 2.4285em !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .ui.facebook.button, .ui.twitter.button, .ui.linkedin.button{
@@ -26,9 +41,9 @@ i.facebook.icon, i.twitter.icon, i.linkedin.icon{
   margin-left: 8px;
 }
 
-.hoverable:hover .animatedIcon {
-  padding-left: 5px;
-  color: rgba(0, 0, 0, 1);
+.textLink {
+  color: black;
+  paddig-bottom: 15px !important;
 }
 
 #top-menu {
@@ -37,6 +52,10 @@ i.facebook.icon, i.twitter.icon, i.linkedin.icon{
   box-shadow: none;
   padding: 0 75px;
   height: 54px;
+}
+
+#top-menu > i {
+  margin-left: 20px;
 }
 
 #microsoft-logo {
@@ -110,6 +129,13 @@ body > div.ui.bottom.right.basic.flowing.popup.transition.visible {
 
 #popup-grid {
   font-size: 12px;
+  background-color: rgb(242, 242, 242);
+}
+
+#popup-row {
+  background-color: #e6e6e6;
+  padding-top: 4px;
+  padding-bottom: 0;
 }
 
 #footer {

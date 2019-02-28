@@ -246,6 +246,7 @@ class TopMenu extends React.Component {
                  on={'click'}
                  verticalOffset={-10}
                  horizontalOffset={170}
+                 className={'popup'}
                  basic trigger={
             <Menu.Item position={'right'}>
               All Microsoft
@@ -253,59 +254,62 @@ class TopMenu extends React.Component {
             </Menu.Item>
           }>
             <Grid columns={'equal'} container id={'popup-grid'}>
-              <Grid.Column>
+              <Grid.Column style={{ paddingLeft: '2rem' }}>
                 <Header as={'h5'} content={'Software'}/>
-                <Item>Windows apps</Item>
-                <Item>One Drive</Item>
-                <Item>Outlook</Item>
-                <Item>Skype</Item>
-                <Item>OneNote</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Windows apps<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>One Drive<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Outlook<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Skype<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>OneNote<br/></Item>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Header'}/>
-                <Item>PCs & tablets</Item>
-                <Item>Accessories</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>PCs & tablets<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Accessories<br/></Item>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Enertainment'}/>
-                <Item>Xbox games</Item>
-                <Item>PC Games</Item>
-                <Item>Windows digital games</Item>
-                <Item>Movies & TV</Item>
-                <Item>Books</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Xbox games<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>PC Games<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Windows digital games<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Movies & TV<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Books<br/></Item>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Business'}/>
-                <Item>Microsoft Azure</Item>
-                <Item>Microsoft Dynamics 365</Item>
-                <Item>Microsoft 365</Item>
-                <Item>Microsoft Industry</Item>
-                <Item>Data platform</Item>
-                <Item>Microsoft Advertising</Item>
-
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Azure<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Dynamics 365<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft 365<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Industry<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Data platform<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Advertising<br/></Item>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Header'}/>
-                <Item>.NET</Item>
-                <Item>Visual Studio</Item>
-                <Item>Windows Server</Item>
-                <Item>Windows Dev Center</Item>
-                <Item>Docs</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>.NET</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Visual Studio<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Windows Server<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Windows Dev Center<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Docs<br/></Item>
               </Grid.Column>
 
-              <Grid.Column>
+              <Grid.Column style={{ paddingRight: '2rem' }}>
                 <Header as={'h5'} content={'Header'}/>
-                <Item>Microsoft Store</Item>
-                <Item>Microsoft Rewards</Item>
-                <Item>Free downloads & security</Item>
-                <Item>Education</Item>
-                <Item>Store locations</Item>
-                <Item>Gift cards</Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Store<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Microsoft Rewards<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Free downloads & security<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Education<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Store locations<br/></Item>
+                <Item as={'a'} className={'textLink'} href={'index.js'}>Gift cards<br/></Item>
               </Grid.Column>
+
+              <Grid.Row centered id={'popup-row'}>
+                <a className={'hoverable textLink'} href={'index.js'}>VIEW SITEMAP <Icon name={'angle right'} className={'animatedIcon'}/></a>
+              </Grid.Row>
             </Grid>
           </Popup>
 
@@ -433,7 +437,8 @@ class PageBody extends React.Component {
 
               <Header>For a life less ordinary</Header>
               <p>Go beyond the traditional with the new Surface Laptop 2.</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
@@ -444,7 +449,8 @@ class PageBody extends React.Component {
               </Image>
               <Header>Surface Book 2</Header>
               <p>Powerhouse performance in the ultimate laptop.</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
@@ -455,7 +461,8 @@ class PageBody extends React.Component {
               </Image>
               <Header>Xbox One X</Header>
               <p>The world's most powerful console.</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
@@ -466,7 +473,8 @@ class PageBody extends React.Component {
               </Image>
               <Header>This is your 365</Header>
               <p>Every day is an opportunity to achieve with Office 365</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
           </Grid.Row>
 
@@ -498,18 +506,20 @@ class PageBody extends React.Component {
 
               <Header>Surface Studio 2</Header>
               <p>Fuel your creativity with brilliant color, blazing graphics, and fast processors.</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
               <Image
                   src={'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1CmIw?ver=e555&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true'}
                   as={'a'}
-                  href={'index.js'}>
+                  href={'index.js'} className={'hoverable'}>
               </Image>
               <Header>Windows 10 Enterprise</Header>
               <p>Download the free 90-day evaluation for IT professionals.</p>
-              <a href={'index.js'}>DOWNLOAD NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>DOWNLOAD NOW <Icon name={'angle right'}
+                                                                              className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
@@ -520,7 +530,8 @@ class PageBody extends React.Component {
               </Image>
               <Header>Office 365 for Business</Header>
               <p>Access your files from anywhere, online or offline.</p>
-              <a href={'index.js'}>SHOP NOW <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>SHOP NOW <Icon name={'angle right'}
+                                                                          className={'animatedIcon'}/></a>
             </Grid.Column>
 
             <Grid.Column>
@@ -531,7 +542,8 @@ class PageBody extends React.Component {
               </Image>
               <Header>Microsoft Azure</Header>
               <p>Go serverless—build apps faster without managing infrastructure.</p>
-              <a href={'index.js'}>LEARN MORE <Icon name={'angle right'}/></a>
+              <a href={'index.js'} className={'hoverable'}>LEARN MORE <Icon name={'angle right'}
+                                                                            className={'animatedIcon'}/></a>
             </Grid.Column>
           </Grid.Row>
 
@@ -578,110 +590,110 @@ class BottomMenu extends React.Component {
             <Grid.Row columns={6}>
               <Grid.Column>
                 <Header as={'h5'} content={'What\'s new'}/>
-                <div>NEW Surface Pro 6</div>
-                <div>NEW Surface Laptop 2</div>
-                <div>NEW Surface Go</div>
-                <div>Xbox One X</div>
-                <div>Xbox One S</div>
-                <div>VR & mixed reality</div>
-                <div>Windows 10 apps</div>
-                <div>Office apps</div>
+                <a href={'index.js'} className={'textLink'}>NEW Surface Pro 6<br/></a>
+                <a href={'index.js'} className={'textLink'}>NEW Surface Laptop 2<br/></a>
+                <a href={'index.js'} className={'textLink'}>NEW Surface Go<br/></a>
+                <a href={'index.js'} className={'textLink'}>Xbox One X<br/></a>
+                <a href={'index.js'} className={'textLink'}>Xbox One S<br/></a>
+                <a href={'index.js'} className={'textLink'}>VR & mixed reality<br/></a>
+                <a href={'index.js'} className={'textLink'}>Windows 10 apps<br/></a>
+                <a href={'index.js'} className={'textLink'}>Office apps<br/></a>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Store & Support'}/>
-                <div>Account profile</div>
-                <div>Download Center</div>
-                <div>Sales & support</div>
-                <div>Returns</div>
-                <div>Order tracking</div>
-                <div>Store locations</div>
-                <div>Support</div>
-                <div>Buy online, pick up in store</div>
+                <a href={'index.js'} className={'textLink'}>Account profile<br/></a>
+                <a href={'index.js'} className={'textLink'}>Download Center<br/></a>
+                <a href={'index.js'} className={'textLink'}>Sales & support<br/></a>
+                <a href={'index.js'} className={'textLink'}>Returns<br/></a>
+                <a href={'index.js'} className={'textLink'}>Order tracking<br/></a>
+                <a href={'index.js'} className={'textLink'}>Store locations<br/></a>
+                <a href={'index.js'} className={'textLink'}>Support<br/></a>
+                <a href={'index.js'} className={'textLink'}>Buy online, pick up in store<br/></a>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Education'}/>
-                <div>Microsoft in education</div>
-                <div>Office for students</div>
-                <div>Office 365 for schools</div>
-                <div>Deals for students & parents</div>
-                <div>Microsoft Azure in education</div>
+                <a href={'index.js'} className={'textLink'}>Microsoft in education<br/></a>
+                <a href={'index.js'} className={'textLink'}>Office for students<br/></a>
+                <a href={'index.js'} className={'textLink'}>Office 365 for schools<br/></a>
+                <a href={'index.js'} className={'textLink'}>Deals for students & parents<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft Azure in education<br/></a>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Enterprise'}/>
-                <div>Microsoft Azure</div>
-                <div>Microsoft Industry</div>
-                <div>Data platform</div>
-                <div>Find a solution provider</div>
-                <div>Microsoft partner resources</div>
-                <div>Microsoft AppSource</div>
-                <div>Health</div>
-                <div>Financial services</div>
+                <a href={'index.js'} className={'textLink'}>Microsoft Azure<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft Industry<br/></a>
+                <a href={'index.js'} className={'textLink'}>Data platform<br/></a>
+                <a href={'index.js'} className={'textLink'}>Find a solution provider<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft partner resources<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft AppSource<br/></a>
+                <a href={'index.js'} className={'textLink'}>Health<br/></a>
+                <a href={'index.js'} className={'textLink'}>Financial services<br/></a>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Developer'}/>
-                <div>Microsoft Visual Studio</div>
-                <div>Windows Dev Center</div>
-                <div>Developer Network</div>
-                <div>TechNet</div>
-                <div>Microsoft developer program</div>
-                <div>Channel 9</div>
-                <div>Office Dev Center</div>
-                <div>Microsoft Garage</div>
+                <a href={'index.js'} className={'textLink'}>Microsoft Visual Studio<br/></a>
+                <a href={'index.js'} className={'textLink'}>Windows Dev Center<br/></a>
+                <a href={'index.js'} className={'textLink'}>Developer Network<br/></a>
+                <a href={'index.js'} className={'textLink'}>TechNet<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft developer program<br/></a>
+                <a href={'index.js'} className={'textLink'}>Channel 9<br/></a>
+                <a href={'index.js'} className={'textLink'}>Office Dev Center<br/></a>
+                <a href={'index.js'} className={'textLink'}>Microsoft Garage<br/></a>
               </Grid.Column>
 
               <Grid.Column>
                 <Header as={'h5'} content={'Company'}/>
-                <div>Careers</div>
-                <div>About Microsoft</div>
-                <div>Company news</div>
-                <div>Privacy at Microsoft</div>
-                <div>Investors</div>
-                <div>Diversity and inclusion</div>
-                <div>Accessibility</div>
-                <div>Security</div>
+                <a href={'index.js'} className={'textLink'}>Careers<br/></a>
+                <a href={'index.js'} className={'textLink'}>About Microsoft<br/></a>
+                <a href={'index.js'} className={'textLink'}>Company news<br/></a>
+                <a href={'index.js'} className={'textLink'}>Privacy at Microsoft<br/></a>
+                <a href={'index.js'} className={'textLink'}>Investors<br/></a>
+                <a href={'index.js'} className={'textLink'}>Diversity and inclusion<br/></a>
+                <a href={'index.js'} className={'textLink'}>Accessibility<br/></a>
+                <a href={'index.js'} className={'textLink'}>Security<br/></a>
               </Grid.Column>
             </Grid.Row>
           </Grid>
+
           <Menu borderless id={'bottom-menu'}>
-            <Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>
               <Icon name={'globe'}/>
               English(United States)
             </Menu.Item>
 
-            <Menu.Item position={'right'}>Sitemap</Menu.Item>
-
-            <Menu.Item>Contact Microsoft</Menu.Item>
-            <Menu.Item>Privacy & cookies</Menu.Item>
-            <Menu.Item>Terms of use</Menu.Item>
-            <Menu.Item>Trademarks</Menu.Item>
-            <Menu.Item>Safety & eco</Menu.Item>
-            <Menu.Item>About our ads</Menu.Item>
+            <Menu.Item  as={'a'} href={'index.js'} position={'right'}>Sitemap</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>Contact Microsoft</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>Privacy & cookies</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>Terms of use</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>Trademarks</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>Safety & eco</Menu.Item>
+            <Menu.Item as={'a'} href={'index.js'}>About our ads</Menu.Item>
             <Menu.Item>© Microsoft 2019</Menu.Item>
           </Menu>
         </div>
-  );
-  }
-  }
-
-    /**
-     * Class Microsoft renders the different elements
-     **/
-  class Microsoft extends React.Component {
-    render() {
-    return (
-      <div>
-      <TopMenu/>
-      <PageBody/>
-      <BottomMenu/>
-      </div>
     );
   }
-  }
+}
 
-  ReactDOM.render(
+/**
+ * Class Microsoft renders the different elements
+ **/
+class Microsoft extends React.Component {
+  render() {
+    return (
+        <div>
+          <TopMenu/>
+          <PageBody/>
+          <BottomMenu/>
+        </div>
+    );
+  }
+}
+
+ReactDOM.render(
     <Microsoft/>
-  , document.getElementById('root'));
+    , document.getElementById('root'));
